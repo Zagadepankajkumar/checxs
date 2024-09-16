@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px; /* Add some space above the footer */
+}
+
+.color-picker {
+    margin: 20px auto;
+}
+
+.color-picker label {
+    margin-right: 10px;
+}
+
+.chessboard-preview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px; /* Adjust height if needed */
+}
+
+#chessboard {
+    display: grid;
+    grid-template-columns: repeat(8, 50px);
+    grid-template-rows: repeat(8, 50px);
+    width: 400px;
+    height: 400px;
+    border: 2px solid #000;
+    margin: 0 auto;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px; /* Adds space between the chessboard and the button */
+    margin-bottom: 20px; /* Creates some spacing between the button and the footer */
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+footer {
+    background-color: #f4f4f4;
+    padding: 10px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
